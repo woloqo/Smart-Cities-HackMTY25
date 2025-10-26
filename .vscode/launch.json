@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Tu Proyecto (debug)", // Puedes cambiar el nombre
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "debug",
+      "args": [
+        // Carga las variables desde tu archivo de secretos
+        "--dart-define-from-file=secrets.json"
+      ]
+    },
+    {
+      "name": "Tu Proyecto (release)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release",
+      "args": [
+        "--dart-define-from-file=secrets.json"
+      ]
+    }
+  ]
+}
